@@ -120,6 +120,8 @@ npx prisma db push
 
 ```bash
 npm run dev
+# ou
+yarn dev
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) 🎉
@@ -157,12 +159,23 @@ css-generator-pro/
 ## 🧪 Scripts Disponíveis
 
 ```bash
+# Com npm
 npm run dev          # Rodar localmente (porta 3000)
 npm run build        # Build para produção
 npm run start        # Rodar build de produção
 npm run lint         # Rodar ESLint
 npm run type-check   # Verificar tipos TypeScript
+
+# Com yarn
+yarn dev             # Rodar localmente (porta 3000)
+yarn build           # Build para produção
+yarn start           # Rodar build de produção
+yarn lint            # Rodar ESLint
+yarn type-check      # Verificar tipos TypeScript
+
+# Prisma (funciona com ambos)
 npx prisma studio    # Abrir interface do banco de dados
+yarn prisma studio   # Alternativa com yarn
 ```
 
 ---

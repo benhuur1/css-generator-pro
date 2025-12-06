@@ -15,6 +15,8 @@ cd css-generator-pro
 
 # Instale dependências
 npm install
+# ou se preferir yarn
+yarn install
 ```
 
 ### 2. Configure o Banco de Dados (Supabase Grátis)
@@ -61,15 +63,21 @@ NEXTAUTH_SECRET="resultado-aqui"
 ```bash
 # Gerar cliente Prisma
 npx prisma generate
+# ou
+yarn prisma generate
 
 # Criar tabelas no banco
 npx prisma db push
+# ou
+yarn prisma db push
 ```
 
 ### 6. Rode o Projeto!
 
 ```bash
 npm run dev
+# ou
+yarn dev
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) 🎉
@@ -89,16 +97,23 @@ Abra [http://localhost:3000](http://localhost:3000) 🎉
 ```bash
 # Ver banco de dados visualmente
 npx prisma studio
+# ou
+yarn prisma studio
 
 # Resetar banco de dados (CUIDADO!)
 npx prisma db push --force-reset
+# ou
+yarn prisma db push --force-reset
 
-# Ver logs detalhados do Prisma
+# Ver logs detalhados do Prisma (npm)
 DEBUG=prisma* npm run dev
+# Ver logs detalhados do Prisma (yarn)
+DEBUG=prisma* yarn dev
 
 # Build para produção
-npm run build
-npm start
+npm run build && npm start
+# ou
+yarn build && yarn start
 ```
 
 ---
