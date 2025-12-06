@@ -1,0 +1,25 @@
+{
+  "version": "7.1.0",
+  "steps": [
+    {
+      "tag": "CreateTable",
+      "table": "users"
+    },
+    {
+      "tag": "CreateTable",
+      "table": "accounts"
+    },
+    {
+      "tag": "CreateTable",
+      "table": "sessions"
+    },
+    {
+      "tag": "CreateTable",
+      "table": "verification_tokens"
+    },
+    {
+      "tag": "CreateTable",
+      "table": "snippets"
+    }
+  ]
+}
