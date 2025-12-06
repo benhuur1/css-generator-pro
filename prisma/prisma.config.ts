@@ -1,7 +1,7 @@
-const prismaConfig = {
+const config = {
   datasource: {
     url: 'file:./prisma/dev.db',
   },
 }
 
-export default prismaConfig
+export default config
